@@ -9,7 +9,7 @@ import { GetCurrentWeather, GetWeatherForecast } from '@/app/lib/open-weather-ap
 export default function Weathers() {
   const [weather, setWeather] = useState();
   const [forecast, setForecast] = useState();
-  const [errorMessage, setErrorMessage] = useState();
+  const [errorMessage, setErrorMessage] = useState<String>();
 
   useEffect(() => {
     if (navigator.geolocation) {
