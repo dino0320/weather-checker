@@ -13,7 +13,7 @@ export default function Weathers() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position: GeolocationPosition) => {
         setWeather(await GetCurrentWeather(position.coords.latitude, position.coords.longitude));
-        setForecast(await GetWeatherForecast(position.coords.latitude, position.coords.longitude))
+        setForecast(await GetWeatherForecast(position.coords.latitude, position.coords.longitude));
       }, error);
     }
   }, []);
