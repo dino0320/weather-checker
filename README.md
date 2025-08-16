@@ -30,7 +30,7 @@ Follow these steps to get this project up and running locally.
   git clone https://github.com/dino0320/weather-checker.git
   cd weather-checker
   ```
-2. Create an .env file with the following content
+2. Create an `.env` file with the following content
   ```env
   OPEN_WEATHER_API_KEY=<Your OpenWeather API key>
   ```
