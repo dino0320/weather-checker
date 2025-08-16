@@ -30,15 +30,19 @@ Follow these steps to get this project up and running locally.
   git clone https://github.com/dino0320/weather-checker.git
   cd weather-checker
   ```
+2. Create an .env file with the following content
+  ```env
+  OPEN_WEATHER_API_KEY=<Your OpenWeather API key>
+  ```
 
-2. Install dependencies
+3. Install dependencies
   ```bash
   npm ci
   ```
 
-3. Start the development server
+4. Start the development server
   ```bash
   npm run dev
   ```
 
-4. Access the app at http://localhost:3000
+5. Access the app at http://localhost:3000
