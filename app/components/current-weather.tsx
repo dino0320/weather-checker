@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card"
 
 export default function CurrentWeather({ weather }: { weather: any }) {
-  if (weather === undefined) {
+  if (weather === undefined || weather === null) {
     return;
   }
   

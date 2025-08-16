@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/card"
 
 export default function WeatherForecast({ forecast }: { forecast: any }) {
-  if (forecast === undefined) {
+  if (forecast === undefined || forecast === null) {
     return;
   }
 
