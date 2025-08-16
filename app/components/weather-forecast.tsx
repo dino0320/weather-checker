@@ -7,14 +7,14 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export default function WeatherForecast({ forecast }: { forecast: object }) {
+export default function WeatherForecast({ forecast }: { forecast: any }) {
   if (forecast === undefined) {
     return;
   }
 
   return (
     <div className="grid grid-flow-col grid-rows-1 gap-4 overflow-x-auto">
-      {forecast.list.map((weather: object) => (
+      {forecast.list.map((weather: any) => (
         <div key={weather.dt}>
           <Card>
             <CardHeader>

@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-export default function CurrentWeather({ weather }: { weather: object }) {
+export default function CurrentWeather({ weather }: { weather: any }) {
   if (weather === undefined) {
     return;
   }
