@@ -6,10 +6,17 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Error from '@/app/components/error'
 
 export default function CurrentWeather({ weather }: { weather: any }) {
-  if (weather === undefined || weather === null) {
+  if (weather === undefined) {
     return;
+  }
+
+  if (weather === null) {
+    return (
+      <Error title='Failed to get the current weather' description='Please try again later.' />
+    );
   }
   
   return (
